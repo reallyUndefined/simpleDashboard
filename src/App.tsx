@@ -1,7 +1,14 @@
+import TopNav from "./components/TopNav";
+
 function App() {
   return (
-    <div className="min-h-screen">
-      <h1>dashboard</h1>
+    <div className="font-barlowCondensed text-slate-500">
+      <div className="grid grid-cols-[20%_1fr] min-h-screen">
+        <div className="bg-navyBlue"></div>
+        <div className="bg-gray-100">
+          <TopNav />
+        </div>
+      </div>
     </div>
   );
 }
