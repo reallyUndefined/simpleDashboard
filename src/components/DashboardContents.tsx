@@ -1,5 +1,6 @@
 import flowers from "../images/flowers.svg";
 import BriefCardsList from "./BriefCardsList";
+import StatsAndOther from "./StatsAndOthers";
 
 const DashboardContents = () => {
   return (
@@ -12,6 +13,7 @@ const DashboardContents = () => {
         </div>
       </div>
       <BriefCardsList />
+      <StatsAndOther />
     </div>
   );
 };
