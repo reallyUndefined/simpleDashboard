@@ -1,5 +1,21 @@
 import { useState } from "react";
-import { RiHome8Line, RiAdminLine, RiLogoutCircleLine } from "react-icons/ri";
+import {
+  RiHome8Line,
+  RiAdminLine,
+  RiLogoutCircleLine,
+  RiCheckboxCircleLine,
+  RiGroupLine,
+  RiBriefcase5Line,
+} from "react-icons/ri";
+import {
+  BsBuilding,
+  BsPersonCheck,
+  BsJournalCheck,
+  BsQuestionSquare,
+  BsExclamationDiamond,
+  BsCalendar2Event,
+  BsCashCoin,
+} from "react-icons/bs";
 
 const SideNav = () => {
   const [viewTestData, setViewTestData] = useState(false);
@@ -26,22 +42,25 @@ const SideNav = () => {
             <div className="mb-1">
               <span className="text-slate-400">HIRS</span>
               <NavItem text="Admin Management" icon={<RiAdminLine />} />
-              <NavItem text="Company Management" icon={<RiAdminLine />} />
-              <NavItem text="Employee Management" icon={<RiAdminLine />} />
-              <NavItem text="Audit Trail" icon={<RiAdminLine />} />
-              <NavItem text="Approval Workflow" icon={<RiAdminLine />} />
+              <NavItem text="Company Management" icon={<BsBuilding />} />
+              <NavItem text="Employee Management" icon={<BsPersonCheck />} />
+              <NavItem text="Audit Trail" icon={<BsJournalCheck />} />
+              <NavItem
+                text="Approval Workflow"
+                icon={<RiCheckboxCircleLine />}
+              />
             </div>
             <div className="mb-1">
               <span className="text-slate-400">LEAVE</span>
-              <NavItem text="Requests" icon={<RiAdminLine />} />
-              <NavItem text="Leave Policy " icon={<RiAdminLine />} />
-              <NavItem text="Special Days" icon={<RiAdminLine />} />
-              <NavItem text="Apply for a staff" icon={<RiAdminLine />} />
+              <NavItem text="Requests" icon={<BsQuestionSquare />} />
+              <NavItem text="Leave Policy " icon={<BsExclamationDiamond />} />
+              <NavItem text="Special Days" icon={<BsCalendar2Event />} />
+              <NavItem text="Apply for a staff" icon={<RiGroupLine />} />
             </div>
             <div className="mb-1">
               <span className="text-slate-400">PAYROLL</span>
-              <NavItem text="Payroll" icon={<RiAdminLine />} />
-              <NavItem text="Paygrade" icon={<RiAdminLine />} />
+              <NavItem text="Payroll" icon={<BsCashCoin />} />
+              <NavItem text="Paygrade" icon={<RiBriefcase5Line />} />
             </div>
           </div>
         </div>
