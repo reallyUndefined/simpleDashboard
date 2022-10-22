@@ -7,7 +7,6 @@ interface EmployeeGenderCardProps {
 const EmployeeGenderCard = ({ men, women }: EmployeeGenderCardProps) => {
   const menPercentage = (men / (men + women)) * 100;
   const womenPercentage = (women / (men + women)) * 100;
-  console.log({ menPercentage, womenPercentage });
 
   return (
     <Card>
@@ -16,7 +15,7 @@ const EmployeeGenderCard = ({ men, women }: EmployeeGenderCardProps) => {
         <div className="grid grid-cols-2">
           <div className="grid grid-rows-[min-content_1fr_min-content] place-content-center text-center">
             <span className="font-semibold text-pink-400">
-              {womenPercentage}%
+              {womenPercentage.toFixed(1)}%
             </span>
             <div
               className="bg-pink-400 w-4 mx-auto mt-auto rounded"
@@ -27,7 +26,7 @@ const EmployeeGenderCard = ({ men, women }: EmployeeGenderCardProps) => {
           </div>
           <div className="grid grid-rows-[min-content_1fr_min-content_min-content] place-content-center text-center">
             <span className="font-semibold text-blue-400">
-              {menPercentage}%
+              {menPercentage.toFixed(1)}%
             </span>
             <div
               className="bg-blue-400 w-4 mx-auto mt-auto rounded"
