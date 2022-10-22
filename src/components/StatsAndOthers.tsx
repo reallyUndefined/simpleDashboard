@@ -1,12 +1,31 @@
 import Card from "./Card";
 import megaphone from "../images/megaphone.svg";
 import Button from "./Button";
+import RequestCard from "./RequestCard";
+import CompanyStatCard from "./CompanyStatCard";
+import EmployeeGenderCard from "./EmployeeGenderCard";
+import SurveyCard from "./SurveyCard";
 
 const StatsAndOther = () => {
   return (
-    <div className="mt-12 grid grid-rows-[1fr_min-content] grid-cols-[2fr_3fr] gap-5 min-h-screen">
-      <div className="bg-yellow-500"></div>
-      <div className="bg-green-500"></div>
+    <div className="mt-12 grid grid-rows-[1fr_min-content] grid-cols-[2fr_3fr] gap-5">
+      <SurveyCard />
+      <div className="grid grid-cols-2 gap-5">
+        <EmployeeGenderCard men={125} women={75} />
+        <RequestCard />
+        <CompanyStatCard
+          title="New Clients"
+          description="New clients joined during a period of time."
+          isGood={false}
+          percent={-2}
+        />
+        <CompanyStatCard
+          title="Projects Done"
+          description="Projects completed during a period of time."
+          isGood
+          percent={86}
+        />
+      </div>
       <div className="col-span-2 flex gap-5">
         <Card>
           <h2 className="text-2xl font-semibold">Create Announcement</h2>

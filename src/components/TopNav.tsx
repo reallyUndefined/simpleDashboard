@@ -5,10 +5,14 @@ const TopNav = () => {
     <div className="bg-white px-8  flex justify-between items-center">
       <nav className="flex gap-10">
         <div className="relative py-5 cursor-pointer">
-          <a href="#employee">Employee View</a>
+          <a className="text-inherit" href="#employee">
+            Employee View
+          </a>
         </div>
         <div className="relative py-5 cursor-pointer">
-          <a href="#sys">System Control</a>
+          <a className="text-inherit" href="#sys">
+            System Control
+          </a>
         </div>
         <div className="relative py-5 after:absolute after:bottom-0 after:left-0 after:rounded after:w-full after:bg-blue-600 after:h-1 font-semibold text-blue-600 cursor-pointer">
           <a href="#admin">Admin</a>
