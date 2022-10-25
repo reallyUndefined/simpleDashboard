@@ -103,7 +103,7 @@ interface NavItemProps {
 }
 const NavItem = ({ text, icon }: NavItemProps) => {
   return (
-    <div className="text-slate-300 hover:bg-green-700/20 hover:text-green-700 rounded-full lg:rounded-l-lg px-4 py-2 flex items-center gap-3 cursor-pointer transition-colors duration-150 ease-in-out">
+    <div className="text-slate-300 hover:bg-green-700/20 hover:text-green-700 rounded-full lg:rounded-none lg:rounded-l-lg px-4 py-2 flex items-center gap-3 cursor-pointer transition-colors duration-150 ease-in-out">
       {icon}
       <span className="hidden lg:block">{text}</span>
     </div>
