@@ -8,9 +8,9 @@ import SurveyCard from "./SurveyCard";
 
 const StatsAndOther = () => {
   return (
-    <div className="mt-12 grid grid-rows-[1fr_min-content] grid-cols-[2fr_3fr] gap-5">
+    <div className="mt-12 grid lg:grid-rows-[1fr_min-content] lg:grid-cols-[2fr_3fr] gap-5">
       <SurveyCard />
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-2 gap-5">
         <EmployeeGenderCard men={125} women={75} />
         <RequestCard />
         <CompanyStatCard
@@ -26,7 +26,7 @@ const StatsAndOther = () => {
           percent={86}
         />
       </div>
-      <div className="col-span-2 flex gap-5">
+      <div className="lg:col-span-2 flex flex-col lg:flex-row gap-5">
         <Card>
           <h2 className="text-2xl font-semibold">Create Announcement</h2>
           <div className="flex items-center justify-between mb-6">

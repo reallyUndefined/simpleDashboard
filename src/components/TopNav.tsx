@@ -2,23 +2,23 @@ import { BiSearch, BiMessageDots, BiCaretDown } from "react-icons/bi";
 
 const TopNav = () => {
   return (
-    <div className="bg-white px-8  flex justify-between items-center">
-      <nav className="flex gap-10">
-        <div className="relative py-5 cursor-pointer">
+    <div className="bg-white px-8 flex justify-between items-center">
+      <nav className="flex gap-10 text-center max-w-[17.32rem]">
+        <div className="relative py-2 lg:py-5 w-full lg:flex-shrink-0 lg:w-max cursor-pointer grid place-content-center">
           <a className="text-inherit" href="#employee">
             Employee View
           </a>
         </div>
-        <div className="relative py-5 cursor-pointer">
+        <div className="relative py-2 lg:py-5 w-full lg:flex-shrink-0 lg:w-max cursor-pointer grid place-content-center">
           <a className="text-inherit" href="#sys">
             System Control
           </a>
         </div>
-        <div className="relative py-5 after:absolute after:bottom-0 after:left-0 after:rounded after:w-full after:bg-blue-600 after:h-1 font-semibold text-blue-600 cursor-pointer">
+        <div className="relative py-2 lg:py-5 w-full lg:flex-shrink-0 lg:w-max after:absolute after:bottom-0 after:left-0 after:rounded after:w-full after:bg-blue-600 after:h-1 font-semibold text-blue-600 cursor-pointer grid place-content-center">
           <a href="#admin">Admin</a>
         </div>
       </nav>
-      <div className="flex gap-4">
+      <div className="md:flex gap-4 hidden">
         <div className="rounded-full h-10 w-10 border grid place-content-center shadow">
           <BiSearch />
         </div>

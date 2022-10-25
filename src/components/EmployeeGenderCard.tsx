@@ -10,7 +10,7 @@ const EmployeeGenderCard = ({ men, women }: EmployeeGenderCardProps) => {
 
   return (
     <Card>
-      <div className="grid grid-rows-[min-content_1fr] h-full">
+      <div className="grid grid-rows-[min-content_1fr] h-full min-h-[10rem]">
         <h2 className="text-2xl font-semibold mb-3">Employee Gender</h2>
         <div className="grid grid-cols-2">
           <div className="grid grid-rows-[min-content_1fr_min-content] place-content-center text-center">

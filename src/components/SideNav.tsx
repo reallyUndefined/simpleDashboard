@@ -22,7 +22,7 @@ const SideNav = () => {
 
   return (
     <div className="h-full">
-      <div className="px-8 py-4 flex items-center gap-5">
+      <div className="px-8 py-4 flex items-center gap-5 invisible lg:visible">
         <div className="rounded-full h-10 w-10 overflow-hidden">
           <img
             className="h-10 w-10 object-cover"
@@ -32,11 +32,11 @@ const SideNav = () => {
         </div>
         <h1 className="text-4xl font-bold text-white">D ONE</h1>
       </div>
-      <div className="h-3/4 mt-8 pl-6 flex flex-col justify-between">
+      <div className="h-[75vh] md:mt-8 pl-1 lg:pl-8 flex flex-col justify-between items-center lg:items-stretch">
         <div>
-          <div className="bg-green-500/20 text-green-500 rounded-l-lg px-4 py-2 flex items-center gap-3 cursor-pointer">
+          <div className="bg-green-500/20 text-green-500 rounded-full lg:rounded-none lg:rounded-l-lg px-4 py-2 flex items-center gap-3 cursor-pointer">
             <RiHome8Line />
-            <span>Dashboard</span>
+            <span className="hidden lg:block">Dashboard</span>
           </div>
           <div className="grid mt-4">
             <div className="mb-1">
@@ -85,11 +85,11 @@ const SideNav = () => {
                 onChange={() => setViewTestData((prev) => !prev)}
               />
             </label>
-            <span>Viewing test data</span>
+            <span className="hidden lg:block">Viewing test data</span>
           </div>
           <div className="flex items-center gap-2 text-lg px-4 py-1 rounded-full hover:text-red-500 hover:bg-red-600/20 w-min cursor-pointer">
             <RiLogoutCircleLine size={22} />
-            <span>Logout</span>
+            <span className="hidden lg:block">Logout</span>
           </div>
         </div>
       </div>
@@ -103,9 +103,9 @@ interface NavItemProps {
 }
 const NavItem = ({ text, icon }: NavItemProps) => {
   return (
-    <div className="text-slate-300 hover:bg-green-700/20 hover:text-green-700 rounded-l-lg px-4 py-2 flex items-center gap-3 cursor-pointer transition-colors duration-150 ease-in-out">
+    <div className="text-slate-300 hover:bg-green-700/20 hover:text-green-700 rounded-full lg:rounded-l-lg px-4 py-2 flex items-center gap-3 cursor-pointer transition-colors duration-150 ease-in-out">
       {icon}
-      <span>{text}</span>
+      <span className="hidden lg:block">{text}</span>
     </div>
   );
 };

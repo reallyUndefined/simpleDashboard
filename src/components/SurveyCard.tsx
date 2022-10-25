@@ -12,7 +12,7 @@ const SurveyCard = () => {
 
   return (
     <Card>
-      <div className="flex flex-col gap-4 h-full">
+      <div className="flex flex-col gap-4 h-full min-h-[20rem]">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-semibold">Employee Happiness</h2>
           <span className="text-slate-500">August 2022</span>

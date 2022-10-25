@@ -5,7 +5,7 @@ import TopNav from "./components/TopNav";
 function App() {
   return (
     <div className="font-barlowCondensed text-slate-600">
-      <div className="grid grid-cols-[20%_1fr] min-h-screen">
+      <div className="grid grid-cols-[5rem_1fr] lg:grid-cols-[18rem_1fr] min-h-screen">
         <div className="bg-navyBlue">
           <SideNav />
         </div>
