@@ -2,7 +2,7 @@ import { BiSearch, BiMessageDots, BiCaretDown } from "react-icons/bi";
 
 const TopNav = () => {
   return (
-    <div className="bg-white px-8 flex justify-between items-center">
+    <div className="bg-white px-8 flex flex-col-reverse items-center justify-between pt-2 md:flex-row md:pt-0">
       <nav className="flex gap-10 text-center max-w-[17.32rem]">
         <div className="relative py-2 lg:py-5 w-full lg:flex-shrink-0 lg:w-max cursor-pointer grid place-content-center">
           <a className="text-inherit" href="#employee">
@@ -18,7 +18,7 @@ const TopNav = () => {
           <a href="#admin">Admin</a>
         </div>
       </nav>
-      <div className="md:flex gap-4 hidden">
+      <div className="flex gap-4">
         <div className="rounded-full h-10 w-10 border grid place-content-center shadow">
           <BiSearch />
         </div>
